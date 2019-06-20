@@ -1,6 +1,6 @@
 package ticGameHexagonal.domain;
 
- class Input
+public class Input
 {
 
     private int size;

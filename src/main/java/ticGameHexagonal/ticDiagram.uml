@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-129.49999999999997" y="163.0">ticGameHexagonal.ArrayRepo</node>
+    <node x="83.02605158730148" y="471.5">ticGameHexagonal.ArrayRepoAdapter</node>
+    <node x="1113.4125" y="175.5">ticGameHexagonal.domain.Input</node>
+    <node x="132.97152777777774" y="0.0">ticGameHexagonal.domain.CellState</node>
+    <node x="436.41249999999997" y="186.0">ticGameHexagonal.domain.Player</node>
+    <node x="657.1624999999999" y="770.0">ticGameHexagonal.domain.GameFactory</node>
+    <node x="497.91249999999997" y="11.0">ticGameHexagonal.domain.Symbol</node>
+    <node x="615.4124999999999" y="175.5">ticGameHexagonal.domain.InvalidSymbolException</node>
+    <node x="406.854861111111" y="373.0">ticGameHexagonal.domain.Game</node>
+    <node x="485.39583333333326" y="889.0">ticGameHexagonal.domain.GameFasade</node>
+    <node x="224.41249999999997" y="186.0">ticGameHexagonal.domain.Repository</node>
+    <node x="904.4124999999999" y="197.5">ticGameHexagonal.domain.InvalidSizeException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ticGameHexagonal.domain.GameFactory" target="ticGameHexagonal.domain.Repository">
+      <point x="-127.99999999999994" y="-24.5" />
+      <point x="689.1625" y="740.0" />
+      <point x="306.31249999999994" y="740.0" />
+      <point x="306.31249999999994" y="353.0" />
+      <point x="319.91249999999997" y="353.0" />
+      <point x="0.0" y="47.0" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.InvalidSymbolException">
+      <point x="67.75" y="-168.5" />
+      <point x="610.104861111111" y="333.0" />
+      <point x="682.6624999999999" y="333.0" />
+      <point x="-67.25" y="57.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.Player">
+      <point x="-40.64999999999998" y="-168.5" />
+      <point x="501.70486111111103" y="323.0" />
+      <point x="462.74583333333334" y="323.0" />
+      <point x="-52.66666666666663" y="47.0" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFasade" target="ticGameHexagonal.domain.CellState">
+      <point x="-94.5" y="-81.0" />
+      <point x="498.89583333333326" y="869.0" />
+      <point x="0.0" y="869.0" />
+      <point x="0.0" y="113.0" />
+      <point x="140.40009920634907" y="113.0" />
+      <point x="-44.57142857142867" y="46.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFactory" target="ticGameHexagonal.domain.Input">
+      <point x="128.00000000000009" y="-24.5" />
+      <point x="945.1625" y="750.0" />
+      <point x="1198.0375" y="750.0" />
+      <point x="1198.0375" y="353.0" />
+      <point x="1170.7875" y="353.0" />
+      <point x="-19.125" y="57.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.CellState">
+      <point x="-67.75" y="-168.5" />
+      <point x="474.604861111111" y="333.0" />
+      <point x="425.91249999999997" y="333.0" />
+      <point x="425.91249999999997" y="123.0" />
+      <point x="229.5429563492064" y="123.0" />
+      <point x="44.57142857142867" y="46.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Player" target="ticGameHexagonal.domain.Symbol">
+      <point x="39.5" y="-47.0" />
+      <point x="554.9124999999999" y="143.0" />
+      <point x="540.4124999999999" y="143.0" />
+      <point x="0.0" y="35.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFasade" target="ticGameHexagonal.domain.Repository">
+      <point x="-67.5" y="-81.0" />
+      <point x="525.8958333333333" y="859.0" />
+      <point x="290.9635515873015" y="859.0" />
+      <point x="290.9635515873015" y="353.0" />
+      <point x="281.7124999999999" y="353.0" />
+      <point x="-38.200000000000045" y="47.0" />
+    </edge>
+    <edge source="ticGameHexagonal.ArrayRepoAdapter" target="ticGameHexagonal.domain.Repository">
+      <point x="71.625" y="-70.0" />
+      <point x="250.15105158730148" y="353.0" />
+      <point x="243.5125" y="353.0" />
+      <point x="-76.39999999999998" y="47.0" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.Symbol">
+      <point x="40.64999999999998" y="-168.5" />
+      <point x="583.004861111111" y="353.0" />
+      <point x="604.9124999999999" y="353.0" />
+      <point x="604.9124999999999" y="143.0" />
+      <point x="568.7458333333334" y="143.0" />
+      <point x="28.33333333333337" y="35.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFasade" target="ticGameHexagonal.domain.Game">
+      <point x="-40.5" y="-81.0" />
+      <point x="552.8958333333333" y="849.0" />
+      <point x="491.07916666666654" y="849.0" />
+      <point x="491.07916666666654" y="750.0" />
+      <point x="452.02152777777764" y="750.0" />
+      <point x="-90.33333333333337" y="168.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.Repository">
+      <point x="-94.85000000000002" y="-168.5" />
+      <point x="447.504861111111" y="343.0" />
+      <point x="396.31249999999994" y="343.0" />
+      <point x="76.39999999999998" y="47.0" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFactory" target="ticGameHexagonal.domain.Game">
+      <point x="-63.99999999999994" y="-24.5" />
+      <point x="753.1625" y="730.0" />
+      <point x="632.6881944444444" y="730.0" />
+      <point x="90.33333333333337" y="168.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFactory" target="ticGameHexagonal.domain.InvalidSymbolException">
+      <point x="5.6843418860808015E-14" y="-24.5" />
+      <point x="67.25" y="57.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFasade" target="ticGameHexagonal.domain.GameFactory">
+      <point x="13.5" y="-81.0" />
+      <point x="606.8958333333333" y="839.0" />
+      <point x="737.1624999999999" y="839.0" />
+      <point x="-80.0" y="24.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.Input">
+      <point x="121.95000000000005" y="-168.5" />
+      <point x="664.304861111111" y="353.0" />
+      <point x="1132.5375" y="353.0" />
+      <point x="-57.375" y="57.5" />
+    </edge>
+    <edge source="ticGameHexagonal.ArrayRepo" target="ticGameHexagonal.domain.CellState">
+      <point x="-63.66666666666674" y="-70.0" />
+      <point x="42.33333333333326" y="123.0" />
+      <point x="155.25724206349196" y="123.0" />
+      <point x="-29.71428571428578" y="46.5" />
+    </edge>
+    <edge source="ticGameHexagonal.ArrayRepoAdapter" target="ticGameHexagonal.ArrayRepo">
+      <point x="-71.625" y="-70.0" />
+      <point x="106.90105158730148" y="353.0" />
+      <point x="58.25" y="353.0" />
+      <point x="-47.75" y="70.0" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Repository" target="ticGameHexagonal.domain.CellState">
+      <point x="1.1368683772161603E-13" y="-47.0" />
+      <point x="319.9125000000001" y="133.0" />
+      <point x="214.68581349206352" y="133.0" />
+      <point x="29.71428571428578" y="46.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFasade" target="ticGameHexagonal.domain.Input">
+      <point x="67.5" y="-81.0" />
+      <point x="660.8958333333333" y="859.0" />
+      <point x="1209.0375" y="859.0" />
+      <point x="19.125" y="57.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.Game" target="ticGameHexagonal.domain.InvalidSizeException">
+      <point x="94.85000000000002" y="-168.5" />
+      <point x="637.2048611111111" y="343.0" />
+      <point x="951.6624999999999" y="343.0" />
+      <point x="-47.25" y="35.5" />
+    </edge>
+    <edge source="ticGameHexagonal.domain.GameFactory" target="ticGameHexagonal.domain.InvalidSizeException">
+      <point x="64.00000000000009" y="-24.5" />
+      <point x="881.1625" y="740.0" />
+      <point x="1046.1625" y="740.0" />
+      <point x="47.25" y="35.5" />
+    </edge>
+    <edge source="ticGameHexagonal.ArrayRepoAdapter" target="ticGameHexagonal.domain.CellState">
+      <point x="23.875" y="-70.0" />
+      <point x="202.40105158730148" y="353.0" />
+      <point x="211.99999999999994" y="353.0" />
+      <point x="211.99999999999994" y="143.0" />
+      <point x="199.82867063492063" y="143.0" />
+      <point x="14.85714285714289" y="46.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="565.5" y="226.28571428571422" />
+  <SelectedNodes>
+    <node>ticGameHexagonal.ArrayRepo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

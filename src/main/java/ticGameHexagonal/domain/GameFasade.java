@@ -12,9 +12,8 @@ public class GameFasade {
 
     public void startGame(Input input, Repository repository) {
         GameFactory gameFactory = new GameFactory();
-        Optional<Game> gameOpt = gameFactory.createNewGame(input);
+        Optional<Game> gameOpt = gameFactory.createNewGame(input,repository);
         setGame(gameOpt);
-        setRepository(repository);
         game.deliverEmptyBoard();
     }
 
@@ -25,9 +24,6 @@ public class GameFasade {
         }
     }
 
-    public void setRepository(Repository repository) {
-        game.setRepository(repository);
-    }
 
 
     //todo zastap metode get repo jakims dto

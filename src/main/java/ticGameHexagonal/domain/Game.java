@@ -7,20 +7,20 @@ class Game {
     private final Player playerTwo;
     private Repository repository;
 
-    Game(int size, Player playerOne, Player playerTwo) throws InvalidSizeException {
+    Game(int size, Player playerOne, Player playerTwo,Repository repository) throws InvalidSizeException {
         this.size = size;
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
-
+        this.repository = repository;
     }
 
-    static Game newGameInstance(Input input) throws InvalidSizeException, InvalidSymbolException {
+    static Game newGameInstance(Input input,Repository repository) throws InvalidSizeException, InvalidSymbolException {
         int validatedSize = validateSize(input.getSize());
         Symbol validatedPlayerOneSymbol = validateSymbol(input.getPlayerOneSymbol());
         Player playerOne = new Player(input.getPlayerOneName(), validatedPlayerOneSymbol);
         Player playerTwo = new Player(input.getPlayerTwoName(), calculatePlayerTwoSymbol(validatedPlayerOneSymbol));
-        Repository repository =s
-        return new Game(validatedSize, playerOne, playerTwo);
+        Repository chosenRepository = setRepository(validatedSize,repository);
+        return new Game(validatedSize, playerOne, playerTwo,chosenRepository);
     }
 
     private static int validateSize(int size) throws InvalidSizeException {
@@ -55,8 +55,8 @@ class Game {
 //
    // todo
     private static Repository setRepository(int size,Repository repository) {
-        repository.setSize();
-        return repository
+        repository.setSize(size);
+        return repository;
 
     }
 
